@@ -1,0 +1,20 @@
+- model: fambloom.Person
+  fields: 
+    firstName: Jane
+    gender: female
+    lastName: Doe
+- model: fambloom.Person
+  fields: 
+    firstName: John
+    lastName: Smith
+    gender: male
+- model: fambloom.Person
+  fields: 
+    firstName: Bela
+    lastName: Med
+    gender: female
+- model: fambloom.Person
+  fields: 
+    firstName: Evan
+    lastName: Young
+    gender: male

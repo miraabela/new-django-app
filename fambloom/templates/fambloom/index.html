@@ -1,0 +1,15 @@
+<h1>Person List</h1>
+
+{% if person_list %}
+    <ul>
+    {% for person in person_list %}
+        <li>{{ person.firstName }}  {{ person.lastName }}, {{ person.gender }}. 
+        <a href="{% url 'fambloom:update' person.id %}">edit</a>
+        <a href="{% url 'fambloom:delete' person.id %}">delete</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Persons are available.</p>
+{% endif %}
+
+<a href="{% url 'fambloom:create' %}">Create a New Person</a>
